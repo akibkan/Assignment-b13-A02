@@ -227,3 +227,98 @@ nav{
     opacity: 60%;
     margin-top: 1rem;
 }
+/*  Featured Episodes Section */
+.featured{
+    padding: 120px 200px;
+    background-color: rgba(26, 11, 46, 1);
+    /* gap: 120px; */
+}
+.featured-container{
+    padding-bottom: 120px;
+}
+.featured-heading{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+}
+.episodes-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.episodes-cards{
+    /* border: 1px solid saddlebrown; */
+    max-width: 380px;
+    height: 440px;
+    /* background-color: rgba(37, 13, 68, 1) ; */
+}
+.episodes-cards .video{
+    width: 380px;
+    height: 260px;
+    
+}
+.card-container{
+    /* border: 1px solid white; */
+    padding: 1.5rem;
+    background-color: rgba(37, 13, 68, 1);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.episodes-cards h4{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+.episodes-cards p{
+    font-size: 1rem;
+    color: #ffffff;
+    opacity: 60%;
+    line-height: 1.5rem;
+}
+.episodes-cards .card-text{
+    color: #00FF88;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 24px;
+}
+.meet-container{
+    padding-top: 120px;
+}
+.alex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid blanchedalmond; */
+    gap: 1rem;
+    background-color: rgba(83, 60, 114, 1);
+    border-radius: 30px;
+    padding: 2rem;
+}
+.alex-card h3{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+.alex-card p{
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 24px;
+    opacity: 60%;
+    margin-bottom: 1rem;
+}
+.alex-logo{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+  /* padding: 12px 20px;
+    color: #00FF88;
+    border: 1px solid #00ff88;
+    background: transparent;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s; */
+
