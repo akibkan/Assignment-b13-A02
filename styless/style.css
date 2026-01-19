@@ -8,6 +8,26 @@
 body{
     font-family: "Inter", sans-serif;
 }
+/* common style  */
+.text{
+    font-size: 1rem;
+    color: #ffffff;
+    opacity: 80%;
+    margin-bottom: 15px;
+}
+.btn{
+    background: linear-gradient(45deg,#f7e93f 0%,#fb09b4 51%,#9100f8 100%);
+    border-radius: 30px;
+    border: none;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+
 /* nav related style */
 nav{
     background-color: #1A0B2E;
@@ -45,22 +65,77 @@ nav{
     display: flex;
     align-items: center;
 }
-.btn{
-    background: linear-gradient(45deg,#f7e93f 0%,#fb09b4 51%,#9100f8 100%);
-    border-radius: 30px;
-    border: none;
-    color: #ffffff;
-    padding: 10px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: 0.2s;
-}
+
 /* hover related style */
 .nav-links li a:hover {
     color: #38bdf8;
     text-shadow: 0 0 10px #38bdf8;
 }
-.btn:hover{
+.btn:hover, .subscribe:hover{
     background:linear-gradient(#790539, #300776);
     box-shadow: 0 0 25px #9ad4ee;
+}
+/* banner related style  */
+.banner{
+    background-image: url(../assets/hero-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 50px 0;
+     text-align: center;
+}
+.banner-container{
+    /* max-width: 550px; */
+    /* height: 760px; */
+    /* border: 1px solid white; */
+    margin: 0 auto ;
+    margin-bottom: 50px;
+    position: relative;
+   
+}
+.badge{
+    position: absolute;
+    top: 25px;
+    left: 1050px;
+    background-color: #00FF88;
+    color: #1A0B2E;
+    padding: 8px 16px;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.circle{
+    position: relative;
+}
+.mike{
+    position: absolute;
+    top: 99px;
+    left: 47%;
+    transform: translateX(-50%,-50%);
+}
+
+
+.banner-content{
+    padding-top: -20px;
+}
+.banner-content h3{
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: #ffffff;
+    margin-bottom: 10px;
+
+}
+.banner.btn{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.subscribe{
+    padding: 12px 20px;
+    color: #00FF88;
+    border: 1px solid #00ff88;
+    background: transparent;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
 }
