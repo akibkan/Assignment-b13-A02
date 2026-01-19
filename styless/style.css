@@ -139,3 +139,48 @@ nav{
     cursor: pointer;
     transition: 0.3s;
 }
+
+/* about section style */
+.about{
+    background-color: rgba(26, 11, 46, 1);
+    padding: 50px 200px 120px 200px;
+}
+.about-container{
+    text-align: center;
+    /* border: 1px solid white; */
+} 
+.about-content{
+    margin-bottom: 80px;
+}
+.about-container .about-content h2{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+.about-container .about-content p {
+    color: #ffffff;
+    opacity: 80%;
+    font-size: 1rem;
+    line-height:1.8rem;
+
+}
+.about-item{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.item{
+    gap: 5rem;
+}
+.item h4{
+    color: #00FF88;
+    font-size: 3rem;
+    font-weight: 950;
+}
+.item p{
+    font-size: 1rem;
+    font-family: 500;
+    opacity: 70%;
+    color: #ffffff;
+}
