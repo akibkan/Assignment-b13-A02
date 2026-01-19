@@ -184,3 +184,46 @@ nav{
     opacity: 70%;
     color: #ffffff;
 }
+/* choose section style */
+.choose{
+    padding: 120px 200px;
+    background-color: rgba(35, 14, 61, 1);
+}
+.choose-heading{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.choose-item{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 30px;
+    /* border: 1px solid white; */
+}
+.choose-card{
+    padding:2.5rem;
+    /* border: 1px solid white; */
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 40px;
+}
+.row-layout{
+    grid-row: span 2;
+}
+.cols-layout{
+    grid-column: span 2;
+}
+.choose-card h4{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 1rem;
+}
+.choose-card p{
+    font-size: 1rem;
+    color: #ffffff;
+    opacity: 60%;
+    margin-top: 1rem;
+}
