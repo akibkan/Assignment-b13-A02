@@ -385,10 +385,16 @@ nav{
         display: none;
     }
     @media screen and (max-width:576px) {
-        .nav-container {
-            margin: 0;
-            justify-content: space-between;
+        nav{
             width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .nav-container {
+            margin: 0 5px;
+            justify-content: space-between;
+            max-width: 576px;
         }
         .nav-links,.btns{
             display: none;
@@ -397,12 +403,86 @@ nav{
         display: flex;
         }
         /* section-banner */
+        .banner{
+            width: 100%;
+            max-width: 576px;
+            background-position:center center;
+            
+        }
         .badge {
-            left: 320px;
+            left: 250px;
+        }
+        .circle{
+            width: 200px;
+            height: 200px;
         }
         .mike{
-            left: 38%;
-            top: 90px;
+            width: 60px;
+            /* height: 70px; */
+            left: 42%;
+            top: 50px;
+        }
+         /* about section */
+        .about{
+            padding: 40px 20px;
+        }
+        .about-content{
+            margin-bottom: 40px;
+        }
+        .about-item {
+            margin-top: 40px;
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 40px;
+        }
+        /* choose section */
+        .choose{
+            padding: 40px 20px;
+        }
+        .choose-container{
+            text-align: center;
+        }
+        .choose-heading{
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        .choose-item{
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(1, 1fr);
+            row-gap: 30px;
+            width: 100%;
+            
+        }
+        .choose-card{
+            max-width: 100%;
+        }
+        .cols-layout{
+            grid-column: auto;
+        }
+        /* feature section */
+        .featured{
+            padding: 40px 20px;
+            width: 100%;
+            max-width: 576px;
+            margin: 0 auto;
+        }
+        .featured-heading{
+            font-size: 2rem;
+            margin-bottom: 24px;
+        }
+        .episodes-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        /* width: 100%; */
+        }
+        .episodes-cards {
+            width: 100%;
+        }
+        .meet-container{
+            padding-top: 60px;
+        }
+        .alex-container{
+            flex-direction: column;
         }
     }
 
