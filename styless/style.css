@@ -410,7 +410,7 @@ nav{
         .nav-links,.btns{
             display: none;
         }
-        .nav-container .hamburger{
+        .display-none{
         display: flex;
         }
         /* section-banner */
