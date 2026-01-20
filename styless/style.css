@@ -111,7 +111,9 @@ nav{
     position: absolute;
     top: 99px;
     left: 47%;
-    transform: translateX(-50%,-50%);
+    animation: animated 3s ease-in 0s infinite normal;
+
+    /* transform: translateX(-50%,-50%); */
 }
 
 
@@ -164,6 +166,9 @@ nav{
     font-size: 1rem;
     line-height:1.8rem;
 
+}
+.hr-line{
+    opacity: 10%;
 }
 .about-item{
     margin-top: 80px;
@@ -354,7 +359,8 @@ nav{
 
     }
     .footer-card{
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
         gap: 60px;
         justify-content: center;
         align-items: center;
@@ -381,8 +387,13 @@ nav{
     .display-none{
         display: none;
     }
-    .nav-container .hamburger{
-        display: none;
+    @keyframes animated {
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
     }
     @media screen and (max-width:576px) {
         nav{
@@ -483,6 +494,14 @@ nav{
         }
         .alex-container{
             flex-direction: column;
+        }
+        /* footer section */
+        .footer{
+            padding: 40px 20px;
+        }
+        .footer-card{
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
         }
     }
 
